@@ -1,38 +1,16 @@
-# Friend Agency Analytics — Starter Repo
+# Agency Analytics Product (Friend Consulting)
 
-This repo is a structured starter to analyze and improve a small marketing/video agency’s pipeline and operations.
+This repository defines and prototypes a lightweight analytics product for a small marketing/video agency.
+The goal is a simple system that turns structured activity data into consistent weekly insights, with clear
+definitions and minimal manual effort.
 
-## Folder structure
-- `data_raw/`    : original exports (never edit)
-- `data_clean/`  : cleaned standardized tables (generated)
-- `src/`         : pipeline scripts
-- `notebooks/`   : exploratory analysis
-- `reports/`     : written reports + figures
-- `docs/`        : project brief, metric dictionary, notes
+What this project focuses on:
+- A stable data model and metric definitions.
+- A repeatable pipeline that cleans data and builds a single source of truth.
+- A weekly summary report that supports business decisions.
+- Low-friction usage for a non-technical owner.
 
-## Quickstart
-1) Create venv
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
-
-2) Put current CSV exports into `data_raw/`.
-
-3) Run the starter pipeline (to be implemented):
-```bash
-python -m src.load_data
-python -m src.clean
-python -m src.build_ssot
-```
-
-4) Open `notebooks/eda.ipynb` and iterate.
-
-## What we’re optimizing for
-- Reliable definitions (metric dictionary)
-- Low-friction logging/tracking
-- Reproducible data build
-- Descriptive insights that translate into business decisions
-
-See `docs/project_brief.md` and `docs/codex_prompt.md`.
+Key documents live in `docs/`, especially:
+- `docs/product_deliverable.md`
+- `docs/next_steps_and_deliverables.md`
+- `docs/usage_options.md`
